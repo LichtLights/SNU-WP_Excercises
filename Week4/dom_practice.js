@@ -31,8 +31,6 @@ const clrButton = document.getElementById("clr-button");
 
 clrButton.addEventListener("click", function () {
   const status = document.getElementsByClassName("status");
-  for(i = status.length; i > 0; i--) {
-    status[i].remove();
-  }
+  status.splice(0, status.length);
   statusNum = 0;
 });
