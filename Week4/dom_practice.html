@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>JavaScript Sample</title>
-  </head>
-  <body>
-    <h1>JavaScript Sample</h1>
-
-    <p id="my-paragraph">This is a sample paragraph.</p>
-    <button id="add-button">Add Status</button>
-    <button id="del-button">Delete Status</button>
-    <button id="clr-button">Clear Status</button>
-    <p id="action-status">Action Status:</p>
-
-    <script src="dom_practice.js"></script>
-
-  </body>
+<head>
+	<title>Calculator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		input[type=button] {
+			width: 50px;
+			height: 50px;
+			font-size: 24px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 5px;
+		}
+		input[type=text] {
+			width: 100%;
+			font-size: 24px;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="result" readonly>
+	<table>
+		<tr>
+			<td><input type="button" value="7" onclick="calculator('7')"></td>
+			<td><input type="button" value="8" onclick="calculator('8')"></td>
+			<td><input type="button" value="9" onclick="calculator('9')"></td>
+			<td><input type="button" value="/" onclick="calculator('/')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="calculator('4')"></td>
+			<td><input type="button" value="5" onclick="calculator('5')"></td>
+			<td><input type="button" value="6" onclick="calculator('6')"></td>
+			<td><input type="button" value="*" onclick="calculator('*')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="calculator('1')"></td>
+			<td><input type="button" value="2" onclick="calculator('2')"></td>
+			<td><input type="button" value="3" onclick="calculator('3')"></td>
+			<td><input type="button" value="-" onclick="calculator('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="0" onclick="calculator('0')"></td>
+			<td><input type="button" value="." onclick="calculator('.')"></td>
+			<td><input type="button" value="C" onclick="calculator('C')"></td>
+			<td><input type="button" value="+" onclick="calculator('+')"></td>
+		</tr>
+		<tr>
+			<td colspan="4"><input type="button" value="=" onclick="calculate()"></td>
+		</tr>
+	</table>
+	<script src = "dom_practice.js"></script>
+</body>
 </html>
